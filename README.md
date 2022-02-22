@@ -1,7 +1,3 @@
-[![Latest Version](https://img.shields.io/github/v/tag/4JX/L5P-Keyboard-RGB?style=for-the-badge&label=Download+Latest)](https://github.com/4JX/L5P-Keyboard-RGB/releases)
-![Build Status](https://img.shields.io/github/workflow/status/4JX/L5P-Keyboard-RGB/Compile%20releases?style=for-the-badge)
-[![Support Server](https://img.shields.io/discord/819491422327406592?style=for-the-badge)](https://discord.gg/bNQ9UqUf3z)
-
 # Legion RGB Control
 
 ![Preview](https://github.com/4JX/L5P-Keyboard-RGB/blob/main/Preview.png)
@@ -125,10 +121,10 @@ legion-kb-rgb --help
 legion-kb-rgb Static 255,0,0,255,0,0,255,0,0,255,0,0
 ```
 
-- Using the SmoothWave effect going to the left with speed `4` and brightness at high
+- Using the SmoothLeftWave with speed `4` and brightness at high
 
 ```sh
-legion-kb-rgb -s 4 -b 2 -d Left SmoothWave
+legion-kb-rgb -s 4 -b 2 SmoothLeftWave
 ```
 
 ## Compatibility
@@ -179,8 +175,10 @@ git clone https://github.com/4JX/L5P-Keyboard-RGB.git
 - Build the project
 
 ```sh
-cd L5P-Keyboard-RGB/
-cargo make build-release
+$ cd L5P-Keyboard-RGB/
+$ cargo make build
+# Or
+$ cargo make build-release
 ```
 
 ### Building manually
